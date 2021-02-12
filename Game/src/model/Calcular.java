@@ -15,50 +15,50 @@ public class Calcular {
 	Random aleatorio = new Random();
 
 	/**
-	 * MÈtodo para gerar os valores 1 e 2 aleatÛriamente, de acordo com a dificuldade escolhida pelo usu·rio
+	 * M√©todo para gerar os valores 1 e 2 aleat√≥riamente, de acordo com a dificuldade escolhida pelo usu√°rio
 	 * @param dificuldade
 	 */
 	public void GerarValores(int dificuldade) {
 		this.nivel = dificuldade;
 		switch (this.nivel) {
 		case 1:
-			System.out.println("NÌvel F·cil");
+			System.out.println("N√≠vel F√°cil");
 			this.valor1 = aleatorio.nextInt(10);
 			this.valor2 = aleatorio.nextInt(10);
 			break;
 		case 2:
-			System.out.println("NÌvel MÈdio");
+			System.out.println("N√≠vel M√©dio");
 			this.valor1 = aleatorio.nextInt(100);
 			this.valor2 = aleatorio.nextInt(100);
 			break;
 
 		case 3:
-			System.out.println("NÌvel DifÌcil");
+			System.out.println("N√≠vel Dif√≠cil");
 			this.valor1 = aleatorio.nextInt(1000);
 			this.valor2 = aleatorio.nextInt(1000);
 			break;
 
 		default:
-			System.out.println("Nivel inv·lido. tente novamente");
+			System.out.println("Nivel inv√°lido. tente novamente");
 
 		}
 	}
 	
 	/**
-	 * MÈtodo para Exibir o Menu Solicitando o nÌvel para o usu·rio
+	 * M√©todo para Exibir o Menu Solicitando o n√≠vel para o usu√°rio
 	 */
 	public void NivelMenu() {
-		System.out.println("**********************\n*****");
+		System.out.println("***************************");
 
-		System.out.println("Favor, escolha o nÌvel: ");
+		System.out.println("Favor, escolha o n√≠vel: ");
 
-		System.out.println("1 - nÌvel FACIL");
-		System.out.println("2 - nÌvel MEDIO");
-		System.out.println("3 - nÌvel DIFICIL");
+		System.out.println("1 - n√≠vel FACIL");
+		System.out.println("2 - n√≠vel MEDIO");
+		System.out.println("3 - n√≠vel DIFICIL");
 	}
 
 	/**
-	 * MÈtodo para selecionar o operador de forma aleatÛria e , em seguida, calcular a express„o
+	 * M√©todo para selecionar o operador de forma aleat√≥ria e , em seguida, calcular a express√£o
 	 */
 	public void Operacao() {
 		this.operacao = aleatorio.nextInt(3);
@@ -76,7 +76,7 @@ public class Calcular {
 	}
 
 	/**
-	 * MÈtodo para adicionar 1 ponto ao Score
+	 * M√©todo para adicionar 1 ponto ao Score
 	 * @return
 	 */
 	public int AdcScore() {
@@ -85,14 +85,14 @@ public class Calcular {
 	}
 
 	/**
-	 * MÈtodo para exibir o Score
+	 * M√©todo para exibir o Score
 	 */
 	public void ExibeScore() {
-		System.out.println("sua pontuaÁ„o È " + this.score);
+		System.out.println("sua pontua√ß√£o √© " + this.score);
 	}
 
 	/**
-	 * MÈtodo para checar se a resposta do usu·rio est· correta e, adicionar o ponto ao Score
+	 * M√©todo para checar se a resposta do usu√°rio est√° correta e, adicionar o ponto ao Score
 	 */
 	public void Checagem() {
 		System.out.println("Digite a sua resposta");
